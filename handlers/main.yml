@@ -1,0 +1,8 @@
+---
+# handlers file for post_build_config
+
+- name: Restart ntp service
+  service:
+    name: ntpd
+    state: restarted
+    enabled: yes
